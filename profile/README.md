@@ -1,4 +1,4 @@
-# <span style="color:red;">🌐 PriziQ! Project</span>
+# <span style="color:red;">🌐 PreziQ! Project</span>
 
 ## <span style="color:red;">📚 Mục lục</span>
 1. [<span style="color:red;">Tên dự án và chủ đề</span>](#1-tên-dự-án-và-chủ-đề)
@@ -13,11 +13,11 @@
 
 ## 📌 Ý nghĩa tên PriziQ!
 
-**PriziQ!** là một cái tên mang nhiều tầng ý nghĩa sâu sắc, kết hợp giữa các yếu tố **động lực, trí tuệ và sự đổi mới trong giáo dục**.
+**PreziQ!** là một cái tên mang nhiều tầng ý nghĩa sâu sắc, kết hợp giữa các yếu tố **động lực, trí tuệ và sự đổi mới trong giáo dục**.
 
-### 🎯 "Prize" (Phần thưởng, Động lực)
-- Học tập qua trò chơi giúp kiểm tra kiến thức và mang lại **cảm giác chinh phục và nhận thưởng**.
-- Tạo động lực với **huy hiệu, điểm số, leaderboard, và quà tặng ảo** để gia tăng sự cam kết với học tập.
+## 🎯 "Presentation" (Trình bày hiệu quả, Truyền cảm hứng)
+- PreziQ! giúp người dùng thiết kế và trình bày nội dung theo cách **lôi cuốn, trực quan và mạch lạc**.
+- Tích hợp yếu tố **gamification** như câu hỏi tương tác, phản hồi trực tiếp và hệ thống điểm để **tăng tính tương tác với người nghe**.
 
 ### 🧠 "iQ" (Trí tuệ, Kiến thức, Thử thách)
 - Biểu thị **IQ (chỉ số thông minh)**, rèn luyện tư duy phản xạ nhanh.
