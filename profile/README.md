@@ -11,7 +11,7 @@
 
 ## <span id="1-tên-dự-án-và-chủ-đề" style="color:red;">🚀 1. Tên dự án và chủ đề</span>
 
-## 📌 Ý nghĩa tên PriziQ!
+## 📌 Ý nghĩa tên PreziQ!
 
 **PreziQ!** là một cái tên mang nhiều tầng ý nghĩa sâu sắc, kết hợp giữa các yếu tố **động lực, trí tuệ và sự đổi mới trong giáo dục**.
 
