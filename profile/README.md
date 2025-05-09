@@ -143,7 +143,7 @@
 
 ---
 
-## <span id="6-nguyên-tắc-làm-việc" style="color:red;">📽️ 5. Video hướng dẫn cài đặt và sử dụng nền tảng PreziQ!</span>
+## <span id="5-hướng-dẫn-sử-dụng" style="color:red;">📽️ 5. Video hướng dẫn cài đặt và sử dụng nền tảng PreziQ!</span>
 
 Xem ngay video hướng dẫn cài đặt và sử dụng PreziQ!: [https://www.youtube.com/watch?v=PriziQDemo](https://www.youtube.com/watch?v=PriziQDemo) 
 
@@ -176,7 +176,7 @@ Xem ngay video hướng dẫn cài đặt và sử dụng PreziQ!: [https://www.
 
 ---
 
-## <span id="5-hướng-dẫn-sử-dụng" style="color:red;">📏 6. Nguyên tắc làm việc</span>
+## <span id="6-nguyên-tắc-làm-việc" style="color:red;">📏 6. Nguyên tắc làm việc</span>
 
 ### 🟢 **Commit Convention (Quy ước khi commit code lên GitHub):**
 ```
