@@ -97,17 +97,13 @@
 
 ### 🖥️ Soạn slides trực tiếp trên PriziQ!
 
-- **Tạo slides chuyên nghiệp**:  
-  Người dùng tạo slides ngay trên nền tảng với giao diện trực quan, hỗ trợ tùy chỉnh màu nền (`backgroundColor`), hình nền (`backgroundImage`), và âm nhạc tùy chỉnh (`customBackgroundMusic`). Slides được tối ưu cho giảng dạy với loại hoạt động `INFO_SLIDE`.
+- **Tạo slides chuyên nghiệp**: Người dùng tạo slides ngay trên nền tảng với giao diện trực quan, hỗ trợ tùy chỉnh màu nền (`backgroundColor`), hình nền (`backgroundImage`), và âm nhạc tùy chỉnh (`customBackgroundMusic`). Slides được tối ưu cho giảng dạy với loại hoạt động `INFO_SLIDE`.
 
-- **Quản lý phần tử slide**:  
-  Thêm các phần tử như văn bản, hình ảnh với các thuộc tính như vị trí (`positionX`, `positionY`), kích thước (`width`, `height`), xoay (`rotation`), và thứ tự lớp (`layerOrder`). Hỗ trợ hiệu ứng chuyển động (`entryAnimation`, `exitAnimation`) với thời gian (`entryAnimationDuration`, `exitAnimationDuration`) và độ trễ (`entryAnimationDelay`, `exitAnimationDelay`).
+- **Quản lý phần tử slide**: Thêm các phần tử như văn bản, hình ảnh với các thuộc tính như vị trí (`positionX`, `positionY`), kích thước (`width`, `height`), xoay (`rotation`), và thứ tự lớp (`layerOrder`). Hỗ trợ hiệu ứng chuyển động (`entryAnimation`, `exitAnimation`) với thời gian (`entryAnimationDuration`, `exitAnimationDuration`) và độ trễ (`entryAnimationDelay`, `exitAnimationDelay`).
 
-- **Tích hợp tương tác**:  
-  Chèn câu hỏi hoặc trò chơi tương tác vào slides thông qua chuyển đổi sang các loại quiz, cho phép kết hợp nội dung giảng dạy và kiểm tra.
+- **Tích hợp tương tác**: Chèn câu hỏi hoặc trò chơi tương tác vào slides thông qua chuyển đổi sang các loại quiz, cho phép kết hợp nội dung giảng dạy và kiểm tra.
 
-- **Chuyển đổi linh hoạt**:  
-  Dễ dàng chuyển đổi từ slide thông tin (`INFO_SLIDE`) sang các loại quiz tương tác (`QUIZ_BUTTONS`, `QUIZ_CHECKBOXES`, v.v.), giữ lại nội dung cơ bản và cung cấp cảnh báo (`conversionWarning`) nếu có nguy cơ mất dữ liệu.
+- **Chuyển đổi linh hoạt**: Dễ dàng chuyển đổi từ slide thông tin (`INFO_SLIDE`) sang các loại quiz tương tác (`QUIZ_BUTTONS`, `QUIZ_CHECKBOXES`, v.v.), giữ lại nội dung cơ bản và cung cấp cảnh báo (`conversionWarning`) nếu có nguy cơ mất dữ liệu.
 
 ### 🎯 Tạo câu hỏi và trò chơi tương tác
 
@@ -119,35 +115,28 @@
   - `QUIZ_TRUE_OR_FALSE`: Câu hỏi đúng/sai đơn giản.
   - `QUIZ_LOCATION`: Chọn vị trí chính xác trên bản đồ hoặc hình ảnh (có `longitude`, `latitude`, `radius`).
 
-- **Tùy chỉnh câu hỏi**:  
-  Mỗi câu hỏi hỗ trợ thiết lập thời gian giới hạn (`timeLimitSeconds`), loại điểm (`NO_POINTS`, `STANDARD`, `DOUBLE_POINTS`), nội dung câu hỏi (`questionText`), và giải thích (`explanation`) để hỗ trợ học tập.
+- **Tùy chỉnh câu hỏi**: Mỗi câu hỏi hỗ trợ thiết lập thời gian giới hạn (`timeLimitSeconds`), loại điểm (`NO_POINTS`, `STANDARD`, `DOUBLE_POINTS`), nội dung câu hỏi (`questionText`), và giải thích (`explanation`) để hỗ trợ học tập.
 
-- **Chế độ thi đấu live**:  
-  Tổ chức các phiên thi đấu thời gian thực qua WebSocket, với bảng xếp hạng (`leaderboard`) cập nhật ngay lập tức dựa trên điểm số (`realtimeScore`) và thứ hạng (`realtimeRanking`). Người chơi nhận thông báo qua kênh `/public/session/{sessionCode}/participants` sau mỗi câu trả lời.
+- **Chế độ thi đấu live**: Tổ chức các phiên thi đấu thời gian thực qua WebSocket, với bảng xếp hạng (`leaderboard`) cập nhật ngay lập tức dựa trên điểm số (`realtimeScore`) và thứ hạng (`realtimeRanking`). Người chơi nhận thông báo qua kênh `/public/session/{sessionCode}/participants` sau mỗi câu trả lời.
 
 ### 🔥 Tích hợp Gamification để tăng hứng thú học tập
 
-- **Tích điểm và thành tích**:  
-  Người dùng tích lũy điểm (`totalPoints`) từ các bài nộp (`ActivitySubmission`) trong phiên. Điểm được dùng để mở khóa thành tích (`Achievement`) với yêu cầu điểm (`requiredPoints`). Thành tích bao gồm tên (`name`), mô tả (`description`), và biểu tượng (`iconUrl`).
+- **Tích điểm và thành tích**: Người dùng tích lũy điểm (`totalPoints`) từ các bài nộp (`ActivitySubmission`) trong phiên. Điểm được dùng để mở khóa thành tích (`Achievement`) với yêu cầu điểm (`requiredPoints`). Thành tích bao gồm tên (`name`), mô tả (`description`), và biểu tượng (`iconUrl`).
 
-- **Bảng xếp hạng thời gian thực**:  
-  Cập nhật liên tục trong phiên dựa trên điểm số (`realtimeScore`) và thứ hạng (`realtimeRanking`). Gửi qua WebSocket ở kênh `/public/session/{sessionCode}/participants`.
+- **Bảng xếp hạng thời gian thực**: Cập nhật liên tục trong phiên dựa trên điểm số (`realtimeScore`) và thứ hạng (`realtimeRanking`). Gửi qua WebSocket ở kênh `/public/session/{sessionCode}/participants`.
 
-- **Huy hiệu**:  
-  Người dùng nhận huy hiệu (`Achievement`) khi đạt mốc điểm, được gửi qua kênh `/private/achievement` sau phiên, tăng động lực học tập.
+- **Huy hiệu**: Người dùng nhận huy hiệu (`Achievement`) khi đạt mốc điểm, được gửi qua kênh `/private/achievement` sau phiên, tăng động lực học tập.
 
 ### 📊 Phân tích kết quả học tập chi tiết
 
-- **Theo dõi tiến độ cá nhân**:  
-  Lưu trữ lịch sử bài nộp (`ActivitySubmission`) với nội dung trả lời (`answerContent`), kết quả đúng/sai (`isCorrect`), và điểm số (`responseScore`). Người dùng xem chi tiết qua tổng kết phiên (`SessionEndSummaryResponse`) tại kênh `/private/summary`.
+- **Theo dõi tiến độ cá nhân**: Lưu trữ lịch sử bài nộp (`ActivitySubmission`) với nội dung trả lời (`answerContent`), kết quả đúng/sai (`isCorrect`), và điểm số (`responseScore`). Người dùng xem chi tiết qua tổng kết phiên (`SessionEndSummaryResponse`) tại kênh `/private/summary`.
 
 - **Báo cáo chi tiết cho phiên**:
   - **Tổng hợp điểm số**: Tổng điểm (`finalScore`) và xếp hạng cuối (`finalRanking`) qua kênh `/public/session/{sessionCode}/end`.
   - **Tỷ lệ đúng/sai**: Dựa trên số câu trả lời đúng (`finalCorrectCount`) và sai (`finalIncorrectCount`).
   - **Thời gian hoàn thành**: Bao gồm thời gian bắt đầu (`startTime`), kết thúc (`endTime`), và thời gian từng câu (`createdAt` của `ActivitySubmission`).
 
-- **Lịch sử phiên**:  
-  Người tổ chức (`hostUser`) có thể xem lịch sử chi tiết (`SessionHistoryResponse`) qua API, bao gồm:
+- **Lịch sử phiên**: Người tổ chức (`hostUser`) có thể xem lịch sử chi tiết (`SessionHistoryResponse`) qua API, bao gồm:
   - Thông tin phiên (`SessionDetailResponse`)
   - Danh sách người tham gia (`SessionParticipantHistoryResponse`)
   - Bài nộp (`ActivitySubmissionSummaryResponse`)
@@ -156,7 +145,7 @@
 
 ## 📽️ 5. Video hướng dẫn cài đặt và sử dụng nền tảng PreziQ!
 
-Khám phá cách sử dụng **PreziQ!** để tạo trải nghiệm học tập tương tác, thú vị!  
+Xem ngay video hướng dẫn cài đặt và sử dụng PreziQ!: [https://www.youtube.com/watch?v=PriziQDemo](https://www.youtube.com/watch?v=PriziQDemo) 
 
 ### 🖼️ Thiết kế slides và quiz tương tác
 - Tùy chỉnh slides (`INFO_SLIDE`) với màu sắc, hình nền, và phần tử động (`SlideElement`).
@@ -184,9 +173,6 @@ Khám phá cách sử dụng **PreziQ!** để tạo trải nghiệm học tập
   - Tỷ lệ đúng/sai (`finalCorrectCount`, `finalIncorrectCount`)
   - Lịch sử bài nộp (`ActivitySubmission`)
 - Giúp đánh giá hiệu quả học tập của từng người chơi.
-
-### 🎥 Xem ngay video hướng dẫn cài đặt và sử dụng PreziQ!: 
-[https://www.youtube.com/watch?v=PriziQDemo](https://www.youtube.com/watch?v=PriziQDemo)
 
 ---
 
