@@ -154,7 +154,42 @@
 
 ---
 
-## <span id="5-hướng-dẫn-sử-dụng" style="color:red;">📽️ 5. Video hướng dẫn sử dụng nền tảng PreziQ!: </span>
+## 📽️ 5. Video hướng dẫn cài đặt và sử dụng nền tảng PreziQ!
+
+Khám phá cách sử dụng **PreziQ!** để tạo trải nghiệm học tập tương tác, thú vị!  
+Video hướng dẫn chi tiết dưới đây sẽ giúp bạn làm chủ nền tảng chỉ trong vài phút – từ việc tạo slides, tổ chức quiz thời gian thực, đến phân tích kết quả học tập.
+
+---
+
+### 🖼️ Thiết kế slides và quiz tương tác
+- Tùy chỉnh slides (`INFO_SLIDE`) với màu sắc, hình nền, và phần tử động (`SlideElement`).
+- Tạo các câu hỏi đa dạng như:
+  - `QUIZ_BUTTONS`
+  - `QUIZ_CHECKBOXES`
+  - `QUIZ_REORDER`
+  - `QUIZ_TYPE_ANSWER`
+  - `QUIZ_TRUE_OR_FALSE`
+  - `QUIZ_LOCATION`
+- Hỗ trợ thiết lập thời gian giới hạn và phần giải thích sau mỗi câu.
+
+### 🎓 Tạo và quản lý phiên học
+- Tạo một phiên (`Session`) với mã duy nhất (`sessionCode`) và QR code (`joinSessionQrUrl`) để mời học viên tham gia.
+- Quản lý người tham gia (`SessionParticipant`) và bắt đầu phiên với các câu hỏi hoặc slides.
+
+### ⚔️ Tổ chức thi đấu live
+- Chuyển đổi linh hoạt giữa các hoạt động (`Activity`) trong phiên.
+- Theo dõi bảng xếp hạng thời gian thực (`realtimeRanking`) qua WebSocket.
+- Kết thúc phiên để gửi tổng kết (`SessionEndSummaryResponse`) cho từng người chơi.
+
+### 📊 Xem báo cáo chi tiết
+- Phân tích kết quả phiên:
+  - Tổng điểm (`finalScore`)
+  - Tỷ lệ đúng/sai (`finalCorrectCount`, `finalIncorrectCount`)
+  - Lịch sử bài nộp (`ActivitySubmission`)
+- Giúp đánh giá hiệu quả học tập của từng người chơi.
+
+### 🎥 Xem ngay video hướng dẫn cài đặt và sử dụng PreziQ!:
+[https://www.youtube.com/watch?v=PriziQDemo](https://www.youtube.com/watch?v=PriziQDemo)
 
 ---
 
@@ -194,10 +229,40 @@ Ví dụ:     feature/add-friend-functionality, bugfix/chat-not-loading
 
 ## <span id="7-tính-năng-phát-triển-thêm" style="color:red;">📏 7. Tính năng phát triển thêm (dự kiến)</span>
 
-Dưới đây là các tính năng tiềm năng để nâng cấp hệ thống PreziQ! trong tương lai:
+Dưới đây là các tính năng tiềm năng để nâng cấp hệ thống **PreziQ!** trong tương lai:
 
-1. **Chế độ chơi theo nhóm**: Cho phép người tổ chức (hostUser) chia người tham gia (SessionParticipant) thành các đội trong phiên (Session). Điểm số đội được tính dựa trên tổng điểm (realtimeScore) của các thành viên, hiển thị trên bảng xếp hạng thời gian thực qua kênh WebSocket /public/session/{sessionCode}/teams. Tính năng này tăng tính hợp tác và cạnh tranh, phù hợp cho lớp học hoặc hội thảo nhóm.
-2. **Xác thực đa yếu tố (MFA)**: Tích hợp Google Authenticator hoặc SMS OTP để tăng cường bảo mật cho tài khoản người dùng (User). Khi đăng nhập, người dùng nhập mã OTP sau khi cung cấp email và mật khẩu, đảm bảo an toàn cho các hành động nhạy cảm như tạo phiên hoặc chỉnh sửa collection.
-3. **Gợi ý cải thiện học tập**: Dựa trên lịch sử bài nộp (ActivitySubmission), hệ thống phân tích tỷ lệ đúng/sai (isCorrect) và điểm số (responseScore) để gợi ý các loại câu hỏi (ActivityType) hoặc chủ đề mà người chơi cần cải thiện. Gợi ý được gửi qua kênh /private/recommendations hoặc hiển thị trong báo cáo cá nhân (SessionEndSummaryResponse).
-4. **Tích hợp AI để tạo câu hỏi tự động**: Sử dụng AI để tạo câu hỏi (Activity) và đáp án (QuizAnswer) dựa trên nội dung của slides (Slide) hoặc collection. Người tổ chức nhập chủ đề hoặc tài liệu, hệ thống tự động tạo các câu hỏi như QUIZ_BUTTONS, QUIZ_TYPE_ANSWER, v.v., kèm giải thích (explanation), tiết kiệm thời gian chuẩn bị.
-5. **Hỗ trợ đa ngôn ngữ cho câu hỏi và slides**: Mở rộng các trường như questionText (Quiz), title, description (Activity), và content (SlideElement) để lưu trữ nội dung đa ngôn ngữ. Người chơi chọn ngôn ngữ hiển thị khi tham gia phiên, tăng khả năng tiếp cận cho người dùng quốc tế.
+1. **Chế độ chơi theo nhóm**  
+   Cho phép người tổ chức (`hostUser`) chia người tham gia (`SessionParticipant`) thành các đội trong phiên (`Session`).  
+   - Điểm số đội được tính dựa trên tổng điểm (`realtimeScore`) của các thành viên.  
+   - Hiển thị trên bảng xếp hạng thời gian thực qua kênh WebSocket `/public/session/{sessionCode}/teams`.  
+   - Tính năng này tăng tính hợp tác và cạnh tranh, phù hợp cho lớp học hoặc hội thảo nhóm.
+
+2. **Xác thực đa yếu tố (MFA)**  
+   Tích hợp Google Authenticator hoặc SMS OTP để tăng cường bảo mật cho tài khoản người dùng (`User`).  
+   - Khi đăng nhập, người dùng nhập mã OTP sau khi cung cấp email và mật khẩu.  
+   - Đảm bảo an toàn cho các hành động nhạy cảm như tạo phiên hoặc chỉnh sửa collection.
+
+3. **Gợi ý cải thiện học tập**  
+   Dựa trên lịch sử bài nộp (`ActivitySubmission`), hệ thống phân tích:
+   - Tỷ lệ đúng/sai (`isCorrect`)
+   - Điểm số (`responseScore`)  
+   => Từ đó gợi ý các loại câu hỏi (`ActivityType`) hoặc chủ đề cần cải thiện.
+
+   - Gợi ý được gửi qua kênh `/private/recommendations`  
+   - Hoặc hiển thị trong báo cáo cá nhân (`SessionEndSummaryResponse`).
+
+4. **Tích hợp AI để tạo câu hỏi tự động**  
+   Sử dụng AI để tạo câu hỏi (`Activity`) và đáp án (`QuizAnswer`) dựa trên nội dung của slides (`Slide`) hoặc collection.  
+   - Người tổ chức nhập chủ đề hoặc tài liệu.  
+   - Hệ thống tự động tạo các câu hỏi như `QUIZ_BUTTONS`, `QUIZ_TYPE_ANSWER`, v.v., kèm giải thích (`explanation`).  
+   - Tiết kiệm thời gian chuẩn bị nội dung.
+
+5. **Hỗ trợ đa ngôn ngữ cho câu hỏi và slides**  
+   Mở rộng các trường như:
+   - `questionText` (Quiz)
+   - `title`, `description` (Activity)
+   - `content` (SlideElement)  
+   => Để lưu trữ nội dung đa ngôn ngữ.  
+   Người chơi chọn ngôn ngữ hiển thị khi tham gia phiên, giúp tăng khả năng tiếp cận cho người dùng quốc tế.
+
+---
