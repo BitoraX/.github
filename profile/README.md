@@ -214,38 +214,26 @@ Ví dụ:     feature/add-friend-functionality, bugfix/chat-not-loading
 
 Dưới đây là các tính năng tiềm năng để nâng cấp hệ thống **PreziQ!** trong tương lai:
 
-1. **Chế độ chơi theo nhóm**  
-   Cho phép người tổ chức (`hostUser`) chia người tham gia (`SessionParticipant`) thành các đội trong phiên (`Session`).  
+1. **Chế độ chơi theo nhóm**: Cho phép người tổ chức (`hostUser`) chia người tham gia (`SessionParticipant`) thành các đội trong phiên (`Session`).  
    - Điểm số đội được tính dựa trên tổng điểm (`realtimeScore`) của các thành viên.  
    - Hiển thị trên bảng xếp hạng thời gian thực qua kênh WebSocket `/public/session/{sessionCode}/teams`.  
    - Tính năng này tăng tính hợp tác và cạnh tranh, phù hợp cho lớp học hoặc hội thảo nhóm.
 
-2. **Xác thực đa yếu tố (MFA)**  
-   Tích hợp Google Authenticator hoặc SMS OTP để tăng cường bảo mật cho tài khoản người dùng (`User`).  
+2. **Xác thực đa yếu tố (MFA)**: Tích hợp Google Authenticator hoặc SMS OTP để tăng cường bảo mật cho tài khoản người dùng (`User`).  
    - Khi đăng nhập, người dùng nhập mã OTP sau khi cung cấp email và mật khẩu.  
    - Đảm bảo an toàn cho các hành động nhạy cảm như tạo phiên hoặc chỉnh sửa collection.
 
-3. **Gợi ý cải thiện học tập**  
-   Dựa trên lịch sử bài nộp (`ActivitySubmission`), hệ thống phân tích:
+3. **Gợi ý cải thiện học tập**: Dựa trên lịch sử bài nộp (`ActivitySubmission`), hệ thống phân tích:
    - Tỷ lệ đúng/sai (`isCorrect`)
-   - Điểm số (`responseScore`)  
-   => Từ đó gợi ý các loại câu hỏi (`ActivityType`) hoặc chủ đề cần cải thiện.
-
+   - Điểm số (`responseScore`)  => Từ đó gợi ý các loại câu hỏi (`ActivityType`) hoặc chủ đề cần cải thiện.
    - Gợi ý được gửi qua kênh `/private/recommendations`  
    - Hoặc hiển thị trong báo cáo cá nhân (`SessionEndSummaryResponse`).
 
-4. **Tích hợp AI để tạo câu hỏi tự động**  
-   Sử dụng AI để tạo câu hỏi (`Activity`) và đáp án (`QuizAnswer`) dựa trên nội dung của slides (`Slide`) hoặc collection.  
+4. **Tích hợp AI để tạo câu hỏi tự động**: Sử dụng AI để tạo câu hỏi (`Activity`) và đáp án (`QuizAnswer`) dựa trên nội dung của slides (`Slide`) hoặc collection.  
    - Người tổ chức nhập chủ đề hoặc tài liệu.  
    - Hệ thống tự động tạo các câu hỏi như `QUIZ_BUTTONS`, `QUIZ_TYPE_ANSWER`, v.v., kèm giải thích (`explanation`).  
    - Tiết kiệm thời gian chuẩn bị nội dung.
 
-5. **Hỗ trợ đa ngôn ngữ cho câu hỏi và slides**  
-   Mở rộng các trường như:
-   - `questionText` (Quiz)
-   - `title`, `description` (Activity)
-   - `content` (SlideElement)  
-   => Để lưu trữ nội dung đa ngôn ngữ.  
-   Người chơi chọn ngôn ngữ hiển thị khi tham gia phiên, giúp tăng khả năng tiếp cận cho người dùng quốc tế.
+5. **Hỗ trợ đa ngôn ngữ cho câu hỏi và slides**: Người chơi chọn ngôn ngữ hiển thị khi tham gia phiên, giúp tăng khả năng tiếp cận cho người dùng quốc tế.
 
 ---
