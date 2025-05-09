@@ -157,9 +157,6 @@
 ## 📽️ 5. Video hướng dẫn cài đặt và sử dụng nền tảng PreziQ!
 
 Khám phá cách sử dụng **PreziQ!** để tạo trải nghiệm học tập tương tác, thú vị!  
-Video hướng dẫn chi tiết dưới đây sẽ giúp bạn làm chủ nền tảng chỉ trong vài phút – từ việc tạo slides, tổ chức quiz thời gian thực, đến phân tích kết quả học tập.
-
----
 
 ### 🖼️ Thiết kế slides và quiz tương tác
 - Tùy chỉnh slides (`INFO_SLIDE`) với màu sắc, hình nền, và phần tử động (`SlideElement`).
@@ -188,7 +185,7 @@ Video hướng dẫn chi tiết dưới đây sẽ giúp bạn làm chủ nền 
   - Lịch sử bài nộp (`ActivitySubmission`)
 - Giúp đánh giá hiệu quả học tập của từng người chơi.
 
-### 🎥 Xem ngay video hướng dẫn cài đặt và sử dụng PreziQ!:
+### 🎥 Xem ngay video hướng dẫn cài đặt và sử dụng PreziQ!: 
 [https://www.youtube.com/watch?v=PriziQDemo](https://www.youtube.com/watch?v=PriziQDemo)
 
 ---
