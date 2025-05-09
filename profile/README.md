@@ -5,7 +5,7 @@
 2. [<span style="color:red;">Lý do lựa chọn dự án</span>](#2-lý-do-lựa-chọn-dự-án)
 3. [<span style="color:red;">Công nghệ sử dụng</span>](#3-công-nghệ-sử-dụng)
 4. [<span style="color:red;">Các tính năng chính</span>](#4-các-tính-năng-chính)
-5. [<span style="color:red;">Video hướng dẫn sử dụng nền tảng PreziQ!</span>](#5-hướng-dẫn-sử-dụng)
+5. [<span style="color:red;">Video hướng dẫn sử dụng nền tảng PreziQ!</span>](#5-huong-dan-su-dung)
 6. [<span style="color:red;">Nguyên tắc làm việc</span>](#6-nguyên-tắc-làm-việc)
 7. [<span style="color:red;">Tính năng phát triển thêm (dự kiến)</span>](#7-tính-năng-phát-triển-thêm)
 
@@ -143,7 +143,7 @@
 
 ---
 
-## <span id="5-hướng-dẫn-sử-dụng" style="color:red;">📽️ 5. Video hướng dẫn cài đặt và sử dụng nền tảng PreziQ!</span>
+## <span id="5-huong-dan-su-dung" style="color:red;">📽️ 5. Video hướng dẫn cài đặt và sử dụng nền tảng PreziQ!</span>
 
 Xem ngay video hướng dẫn cài đặt và sử dụng PreziQ!: [https://www.youtube.com/watch?v=PriziQDemo](https://www.youtube.com/watch?v=PriziQDemo) 
 
